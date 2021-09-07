@@ -15,7 +15,5 @@
 // console.log(message);
 // console.warn(warnMessage);
 // console.error(errorMessage);
-var a = '15' - '5';
-console.log(a);
 
 
