@@ -39,42 +39,18 @@
 
 
 
-// function run(input) {
-//     if((typeof input) == 'string'){
-//         output = true;
-//     }
-//     else{
-//         output = false;
-//     }
-//     return output;
-//     console.log(output)
-// }
-// run('111111111');
-
-// ===================================================================
-
-// console.log(Boolean(1)) // true
-// console.log(Boolean(['BMW'])) // true
-// console.log(Boolean({ name: 'Miu' })) // true
-// console.log(!!'hi') // true
-// console.log(!!1) // true
-// console.log(!!'f8') // true
-// console.log(!!['Mercedes']) // true
-
-// console.log(!!false) // false
-// console.log(!!0) // false
-// console.log(!!'') // false
-// console.log(!!null) // false
-// console.log(!!undefined) // false
-// console.log(!!NaN) // false
-
-
-function run(a, b, c) {
-    a=1;
-    b=0;
-    c=2;
-    var result = a || b || c;
-    console.log(result);
+function run(input) {
+    var output;
+    input='ssssss';
+    if((typeof input)==String){
+        output = true;
+    }
+    else{
+        output = false;
+    }
+    return output;
+    console.log
 }
 run();
+
 

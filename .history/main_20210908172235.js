@@ -53,28 +53,11 @@
 
 // ===================================================================
 
-// console.log(Boolean(1)) // true
-// console.log(Boolean(['BMW'])) // true
-// console.log(Boolean({ name: 'Miu' })) // true
-// console.log(!!'hi') // true
-// console.log(!!1) // true
-// console.log(!!'f8') // true
-// console.log(!!['Mercedes']) // true
-
-// console.log(!!false) // false
-// console.log(!!0) // false
-// console.log(!!'') // false
-// console.log(!!null) // false
-// console.log(!!undefined) // false
-// console.log(!!NaN) // false
-
-
-function run(a, b, c) {
-    a=1;
-    b=0;
-    c=2;
-    var result = a || b || c;
-    console.log(result);
-}
-run();
+console.log(Boolean(1)) // true
+console.log(Boolean(['BMW'])) // true
+console.log(Boolean({ name: 'Miu' })) // true
+console.log(!!'hi') // true
+console.log(!!1) // true
+console.log(!!'f8') // true
+console.log(!!['Mercedes']) // true
 

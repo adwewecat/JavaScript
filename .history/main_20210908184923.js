@@ -73,7 +73,7 @@ function run(a, b, c) {
     a=1;
     b=0;
     c=2;
-    var result = a || b || c;
+    var result = a ||
     console.log(result);
 }
 run();

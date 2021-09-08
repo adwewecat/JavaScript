@@ -73,7 +73,8 @@ function run(a, b, c) {
     a=1;
     b=0;
     c=2;
-    var result = a || b || c;
+    var result = (!!a)
+    return result;
     console.log(result);
 }
 run();
