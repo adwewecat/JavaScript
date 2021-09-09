@@ -105,33 +105,9 @@
 //     return result;
 // }
 
-// Cắt chuỗi
-// function run(title) {
-//     language = title.slice(4,14);
-//     rest = title.slice(14);
-//     console.log(rest);
-// }
+function run(title) {
+    language = title.slice(5);
+    return `Language is ${language} and rest is ${rest}`;
+}
 
-
-// function run(content) {
-//     console.log(content.replace(/JS/g, 'Javascript'));
-//     return content.replace(/JS/g, 'Javascript');
-    
-// }
-
-
-// Check số nguyên dương
-// function run(number) {
-    
-//     if(number > 0 && !isNaN(number) && (typeof number) =='number' && Number.isInteger(number)){
-//         result =true;
-//         Number.isInteger(number)
-//         console.log(result);
-//     }
-//     else{
-//         result =false;
-//         Number.isInteger(number)
-//         console.log(result);
-//     }
-// }
-run(10);
+run('');

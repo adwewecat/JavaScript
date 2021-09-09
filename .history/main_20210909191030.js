@@ -119,19 +119,4 @@
     
 // }
 
-
-// Check số nguyên dương
-// function run(number) {
-    
-//     if(number > 0 && !isNaN(number) && (typeof number) =='number' && Number.isInteger(number)){
-//         result =true;
-//         Number.isInteger(number)
-//         console.log(result);
-//     }
-//     else{
-//         result =false;
-//         Number.isInteger(number)
-//         console.log(result);
-//     }
-// }
-run(10);
+run('JS và js');

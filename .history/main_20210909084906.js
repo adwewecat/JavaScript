@@ -79,59 +79,8 @@
 // run();
 
 
-// var commentText ='"Học chưa hiểu là học chưa đủ!"';
-// var authorName = 'Sơn Đặng:';
-// var fullCommentText = `${authorName} ${commentText}`;
+var commentText ='"Học chưa hiểu là học chưa đủ!"';
+var authorName = 'Sơn Đặng:';
+var fullCommentText = `${authorName} ${commentText}`;
+console.log(fullCommentText);
 
-// var commentText ='Để hiển thị được chuỗi chứa dấu gạch chéo ngược (\\) ta phải thêm dấu \\ vào trước hoặc sau nó';
-// console.log(commentText);
-
-
-// =====================================================================
-
-// function run(commentText) {
-//     commentText = commentText.length;
-//     console.log(commentText)
-// }
-
-// function run(title, description) {
-//     if(title.indexOf('Javascript') != -1 && description.indexOf('Javascript') != -1 ){
-//         result = true;
-//         console.log(result);
-//     }else{
-//         result = false;
-//         console.log(result);
-//     }
-//     return result;
-// }
-
-// Cắt chuỗi
-// function run(title) {
-//     language = title.slice(4,14);
-//     rest = title.slice(14);
-//     console.log(rest);
-// }
-
-
-// function run(content) {
-//     console.log(content.replace(/JS/g, 'Javascript'));
-//     return content.replace(/JS/g, 'Javascript');
-    
-// }
-
-
-// Check số nguyên dương
-// function run(number) {
-    
-//     if(number > 0 && !isNaN(number) && (typeof number) =='number' && Number.isInteger(number)){
-//         result =true;
-//         Number.isInteger(number)
-//         console.log(result);
-//     }
-//     else{
-//         result =false;
-//         Number.isInteger(number)
-//         console.log(result);
-//     }
-// }
-run(10);

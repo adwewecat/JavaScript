@@ -120,18 +120,14 @@
 // }
 
 
-// Check số nguyên dương
-// function run(number) {
+
+function run(number) {
     
-//     if(number > 0 && !isNaN(number) && (typeof number) =='number' && Number.isInteger(number)){
-//         result =true;
-//         Number.isInteger(number)
-//         console.log(result);
-//     }
-//     else{
-//         result =false;
-//         Number.isInteger(number)
-//         console.log(result);
-//     }
-// }
+    if(number > 0 && toNaN(number)){
+        result =true;
+    }
+    else{
+        result =false;
+    }
+}
 run(10);
