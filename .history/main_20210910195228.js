@@ -136,20 +136,20 @@
 // }
 
 
-var anArray = []
+var anArray = [1,2]
 console.log(anArray.length)
-if(anArray.length == 0){
-    anArray.splice(0,0,'Cat','Mouse') 
+console.log(anArray)
+if(anArray.length < 3){
+    anArray = [anArray.shift()]
+    console.log(anArray.length)
+    console.log(Array.isArray(anArray))
     console.log(anArray)
 } 
-if(anArray.length == 1){
-    anArray.splice(0,0,'Elephant') 
-    console.log(anArray)
-} 
-if(anArray.length > 2){
-    anArray.splice(1,1,'Monkey','Tiger') 
-    console.log(anArray)
-} 
+else{
+    anArray.pop(1,2)
+    console.log(anArray.length)
+    console.log(Array.isArray(anArray))
+}
 
 
 // run(10);

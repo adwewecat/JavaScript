@@ -1,0 +1,11 @@
+// Làm Việc với Array
+1. toString:  chuyển kiểu dữ liệu Array sáng chuỗi
+VD: var languages = [
+    'Java',
+    'PHP',
+    'Python',
+]
+ languages.toString();
+ ==> Kết quả : Java,PHP,Python
+
+ 2.Join : 

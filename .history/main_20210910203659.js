@@ -138,7 +138,7 @@
 
 var anArray = []
 console.log(anArray.length)
-if(anArray.length == 0){
+if(anArray.Length == 0){
     anArray.splice(0,0,'Cat','Mouse') 
     console.log(anArray)
 } 

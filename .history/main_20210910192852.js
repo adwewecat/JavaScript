@@ -136,20 +136,5 @@
 // }
 
 
-var anArray = []
-console.log(anArray.length)
-if(anArray.length == 0){
-    anArray.splice(0,0,'Cat','Mouse') 
-    console.log(anArray)
-} 
-if(anArray.length == 1){
-    anArray.splice(0,0,'Elephant') 
-    console.log(anArray)
-} 
-if(anArray.length > 2){
-    anArray.splice(1,1,'Monkey','Tiger') 
-    console.log(anArray)
-} 
 
-
-// run(10);
+run(10);

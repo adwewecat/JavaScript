@@ -136,7 +136,7 @@
 // }
 
 
-var anArray = []
+var anArray = [1,2,3]
 console.log(anArray.length)
 if(anArray.length == 0){
     anArray.splice(0,0,'Cat','Mouse') 
@@ -147,7 +147,7 @@ if(anArray.length == 1){
     console.log(anArray)
 } 
 if(anArray.length > 2){
-    anArray.splice(1,1,'Monkey','Tiger') 
+    anArray.splice(0,0,'Elephant') 
     console.log(anArray)
 } 
 
