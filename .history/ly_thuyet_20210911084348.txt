@@ -1,0 +1,103 @@
+// Làm Việc với Array
+
+var languages = [
+    'Java',
+    'PHP',
+    'Python',
+]
+
+1. toString: chuyển kiểu dữ liệu Array sang chuỗi
+VD:  languages.toString();
+ ==> Kết quả : Java,PHP,Python
+
+
+2.Join : chuyển kiểu dữ liệu Array 
+ sang chuỗi nhưng thêm kiều kiện ngăn cách giữa 
+ các phần tử là gì
+ VD :  languages.join('--');
+ ==> Kết quả : Java--PHP--Python
+
+
+3.pop : Xóa đi phần tử cuối mảng Array và 
+    trả về phần tử mới Xóa
+VD : langguage.pop();
+==> Kết quả : Python
+
+
+4. push : Thêm 1 hoặc nhiều phần tử vào cuối mảng
+    và trả về độ dài mới của mảng
+VD : languages.push('Dart','Ruby')
+==> Kết quả : 5
+
+
+5.shift : Xóa đi phần tử đầu mảng Array và 
+ trả về phần tử mới Xóa
+VD : langguage.shift();
+==> Kết quả : Java
+
+
+6.unshift :Thêm 1 hoặc nhiều phần tử vào đầu mảng
+    và trả về độ dài mới của mảng
+VD : languages.unshift('Dart','Ruby')
+==> Kết quả : 5
+
+
+7.splice : xóa phần tử hoặc có thể thay thế
+    phần tử đó bằng 1 phần tử khác bởi vị trí 
+    index
+VD : languages.splice(1 , 2 , 'Dark')
+1 : Vị trí Index sẽ bắt đầu làm Việc
+2 : Số phần tử sẽ xóa bắt đầu từ vị trí Index ban đầu
+'Dark' : Phần tử muốn thêm vào vị trí Index
+==> Kết quả : languages = [
+    'Java',
+    'Dark',
+]
+
+
+8.concat : nối 2 Array 
+VD : languages.concat(langguages)
+
+
+9. slice : cắt 1 Array
+VD : langguages.slice(1,2) 
+1: là số bắt đầu cắt
+2: là cắt bao nhiêu phần tử
+
+
+
+
+========32,33,34====================
+============================================================
+                        Hàm
+32. Tạo hàm có thể đặt tên từ a->z A->Z 0->9 _ $
+không được đặt số ở đầu
+
+function showDialog(message) { 
+    console.log(message)
+}
+gọi hàm : --> showDialog('I love you');
+
+
+33. arguments : hàm được định nghĩa sẵn
+VD :
+function writeLog() {
+    var myString = '';
+    for (var pagram of arguments) {
+        myString += `${pagram} - `
+    }
+    console.log(myString)
+}
+writeLog('Log 1, Log 2');
+==> Tạo ra 1 biến pagram chạy hết số phần tử của
+arguments và gán vào biến myString
+
+
+34. Return : Trả về
+VD: 
+function cong(a, b) {
+    return a + b;
+}
+var result = cong(2 , 8);
+
+console.log(result);
