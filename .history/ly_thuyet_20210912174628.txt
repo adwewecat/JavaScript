@@ -144,7 +144,7 @@ function calculateTriangleArea(a,h) {
 ===========38 , 39, 40 ,41 , 42 ,==========
 ============ 43 , 44, 45 , 46 , 47=========
 ===========48 ,49 , 50 , 51, 52 ==================
-=======53 , 54 , 55 =============
+=======53 , =============
 
 38.Object 
 
@@ -430,60 +430,12 @@ do {
 
 
 53 . break & continue trong vòng lặp
--- break sẽ thoát khỏi vòng lặp khi nó chạy
--- continue 
 
 for (var i = 0 ; i<10; i++){
 
-    //chỉ in số chẵn
-    giải thích : nếu là số lẻ thì continue ,
-        sẽ bỏ qua hết các dòng trong vòng lặp phía dưới
-        và chạy tiếp
-    if(i%2 !==0){
-        continue;
-    }
-
-    //nếu chỉ muốn i chạy đến 5 thôi thì dùng như sau 
-    if (i>=5){
-        break;
+    nếu chỉ muốn i chạy đến 5 thôi thì dùng như sau 
+    if (){
+        
     }
 }
----------------------------------------------------------------
-
-
-
-
-54. Vòng lặp lồng nhau
-VD:
-var myArray = [
-    [1,2],
-    [3,4],
-    [5,6],
-];
-
-for (var i=0 ; i< myArray.length; i++){
-    console.log(myArray[i]);
-
-    for (var j = 0 ; j<myArray[i].length; j++){
-        console.log(myArray[i][j]);
-    }
-}
-------------------------------------------------------------------
-
-
-
-
-55. 
-VD : In giá trị giảm
-for (var i = 100; i > 0 ; i--) {
-    console.log(i);
-}
-
-VD 1 : giá trị tăng 0 5 10 15 20 
-for (var i = 0; i <= 100 ; i+=5) {
-    console.log(i);
-}
-------------------------------------------------------------------
-
-
 
