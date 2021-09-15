@@ -1,0 +1,702 @@
+// Làm Việc với Array
+
+var languages = [
+    'Java',
+    'PHP',
+    'Python',
+]
+
+1.toString: chuyển kiểu dữ liệu Array sang chuỗi
+VD:  languages.toString();
+ ==> Kết quả : Java,PHP,Python
+
+
+2.Join : chuyển kiểu dữ liệu Array 
+ sang chuỗi nhưng thêm kiều kiện ngăn cách giữa 
+ các phần tử là gì
+ VD :  languages.join('--');
+ ==> Kết quả : Java--PHP--Python
+
+
+3.pop : Xóa đi phần tử cuối mảng Array và 
+    trả về phần tử mới Xóa
+VD : langguage.pop();
+==> Kết quả : Python
+
+
+4. push : Thêm 1 hoặc nhiều phần tử vào cuối mảng
+    và trả về độ dài mới của mảng
+VD : languages.push('Dart','Ruby')
+==> Kết quả : 5
+
+
+5.shift : Xóa đi phần tử đầu mảng Array và 
+ trả về phần tử mới Xóa
+VD : langguage.shift();
+==> Kết quả : Java
+
+
+6.unshift :Thêm 1 hoặc nhiều phần tử vào đầu mảng
+    và trả về độ dài mới của mảng
+VD : languages.unshift('Dart','Ruby')
+==> Kết quả : 5
+
+
+7.splice : xóa phần tử hoặc có thể thay thế
+    phần tử đó bằng 1 phần tử khác bởi vị trí 
+    index
+VD : languages.splice(1 , 2 , 'Dark')
+1 : Vị trí Index sẽ bắt đầu làm Việc
+2 : Số phần tử sẽ xóa bắt đầu từ vị trí Index ban đầu
+'Dark' : Phần tử muốn thêm vào vị trí Index
+==> Kết quả : languages = [
+    'Java',
+    'Dark',
+]
+
+
+8.concat : nối 2 Array 
+VD : languages.concat(langguages)
+
+
+9. slice : cắt 1 Array
+VD : langguages.slice(1,2) 
+1: là số bắt đầu cắt
+2: là cắt bao nhiêu phần tử
+
+
+
+
+========32,33,34,35,36,37====================
+============================================================
+                        Hàm
+32. Tạo hàm có thể đặt tên từ a->z A->Z 0->9 _ $
+không được đặt số ở đầu
+
+function showDialog(message) { 
+    console.log(message)
+}
+gọi hàm : --> showDialog('I love you');
+
+
+33. arguments : hàm được định nghĩa sẵn
+VD :
+function writeLog() {
+    var myString = '';
+    for (var pagram of arguments) {
+        myString += `${pagram} - `
+    }
+    console.log(myString)
+}
+writeLog('Log 1, Log 2');
+==> Tạo ra 1 biến pagram chạy hết số phần tử của
+arguments và gán vào biến myString
+
+
+34. Return : Trả về
+VD: 
+function cong(a, b) {
+    return a + b;
+}
+var result = cong(2 , 8);
+console.log(result);
+
+======number để xác định là kiểu số, 
+undefined để xác nhận biến đã được gán giá trị hay chưa (tránh nhập rỗng) , 
+isNaN xác định tham số truyền vào là hợp lệ (tránh truyền vào sum(2/0 , 1))
+==========
+function sum(a,b) {
+    if (typeof (a,b) =='number'
+    && typeof (a,b) !='undefined'
+    && !isNaN(a,b)
+    ) {
+        return a+b;
+    }
+    else{
+        return false;
+    }
+    }
+Number.isFinite()	Xác định xem giá trị đã cho có phải là số hữu hạn hay không. Trả về boolean
+Number.isInteger()	Xác định xem giá trị đã cho có phải là số nguyên hay không. Trả về boolean
+Number.parseFloat()	Chuyển đổi chuỗi đã cho thành một số dấu phẩy động
+Number.parseInt()	Chuyển đổi chuỗi đã cho thành một số nguyên
+Number.prototype.toFixed()	Chuyển đổi và trả về chuỗi đại diện cho số đã cho, có số chữ số chính xác sau dấu thập phân
+Number.prototype.toString()	Chuyển đổi và trả về số đã cho dưới dạng chuỗi
+
+=== Diện Tích Tam Giac=====
+function calculateTriangleArea(a,h) {
+    if ((a,h) != undefined && Number.isInteger(a,h) 
+    && (a,h) >0 && !isNaN(a,h)) {
+        var triangleAcreage = 1/2*a*h;
+        return triangleAcreage;
+    }
+    else{
+        return false;
+    }
+}
+
+
+
+
+
+
+===============================================
+===========38 , 39, 40 ,41 , 42 ,==========
+============ 43 , 44, 45 , 46 , 47=========
+===========48 ,49 , 50 , 51, 52 ==================
+=======53 , 54 , 55 =============
+
+38.Object 
+
+var emailKey = 'email';
+
+var myInfo = {
+    name: '',
+    age: '',
+    [emailKey] = 'aaaaa@gmail.com';
+};
+
+-----Thêm 1 key và value vào object đã Tạo
+cách 1 : myInfo.email = 'dung.nguyenanh@ggg.com.vn';
+cách 2 : myInfo.['myemail'] = 'dung.nguyenanh@ggg.com.vn';
+
+----- Cách lấy ra giá trị trong object
+cách 1 : myInfo.name
+cách 2 : myInfo.['name']
+
+----- Xóa đi 1 key trong object 
+cách 1 : delete myInfo.name
+
+Function --> Phương thức / method
+VD : getAge: function() {
+    
+}
+
+others --> thuộc tính / property
+VD : phone: '0102030405',
+--------------------------------
+
+
+
+39. Object constructor
+VD : 
+function User(firstName, lastName, avatar) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.avatar = avatar;
+    this.getName = function(){
+        return `${this.firstName} ${lastName}`
+    }
+}
+
+var author = new User('Dũng', 'Nguyễn', 'Avatar')
+var user = new User('Anh', 'Nguyễn', 'Avatar')
+
+-- Thêm 1 key mới cho từng đối tượng riêng
+author.title = 'chia sẻ khóa học'
+user.comment = 'ok baby'
+----------------------------------------
+
+
+40. Object prototype
+VD :
+User.prototype.className ='F8'
+-----------------------------------------------------
+
+
+
+41. Date 
+cách 1 : var date = new Date(); -->typeof là object
+cách 2 : var date = Date(); -->typeof là string
+
+lấy năm : var year = date.getFullYear();
+lấy tháng : var month = date.getMonth() + 1;
+lấy năm : var day = date.getDate();
+lấy giờ : var house = date.getHouse();
+lấy phút : var minutes = date.getMinutes();
+lấy giây : var seconds = date.getSeconds();
+------------------------------------------------------
+
+
+
+42. Lệnh rẽ nhánh if else 
+chỉ cần 1 nhánh đúng là câu lệnh sẽ dừng
+if (){
+
+}else if(){
+
+}
+----------------------------------------------
+
+
+
+43. switch 
+VD :
+var date = 2;
+
+switch(date) {
+    case 2: --> nó sẽ lấy date so sánh với 2 (date === 2)
+        console.log('hôm nay là thứ 2');
+        break;
+    case 3:
+        console.log('hôm nay là thứ 3');
+        break;
+    case 4:
+        console.log('hôm nay là thứ 4');
+        break;
+    default:
+        console.log('Không biết');
+}
+
+hoặc 
+
+switch(date) {
+    case 2:
+    case 3:
+        console.log('hôm nay là thứ 2, 3');
+        break;
+    case 4:
+        console.log('hôm nay là thứ 4');
+        break;
+    default:
+    console.log('Không biết');   
+}
+------------------------------------------------------
+
+
+
+44. Toán tử 3 Ngôi
+VD 1: Nếu tiền khóa học > 0 thì hiện coin còn ko
+hiện miễn phí
+var course = {
+    name: 'Javascript';
+    coin: 250;
+}
+
+var result = course.coin > 0 ? `${course.coin} Coin` : 'Miễn Phí';
+
+VD 2: nếu a là số nguyên thì return về a, còn ko phải số nguyên
+thì làm tròn dưới số a đó
+function run(a) {
+    return Number.isInteger(a) && a !=NaN ? a : Math.floor(a)
+}
+----------------------------------------------------------------
+
+
+
+
+45. Vòng Lặp
+-- for : Lặp với điều kiện đúng
+-- for/in : Lặp qua key của đối tượng
+-- for/of : Lặp qua value của đối tượng
+-- while : Lặp khi điều kiện đúng
+-- do/while : Lặp ít nhất 1 lần, sau đó lặp khi điều kiên đúng
+-------------------------------------------------------------------
+
+
+
+46.47.48 Vòng lặp for
+-- for : Lặp với điều kiện đúng
+VD:
+for (var i=1; i <= 1000; i++) {
+    console.log(i)
+}
+1.chạy "var i=1:   1 lần duy nhất
+2.kiểm tra i <= 1000 xong vòng lặp sẽ chạy
+3.chạy xong vòng lặp mới chạy i++ và quay lại bước so sánh với 1000 
+
+
+VD 2 : 
+var myArray = [
+    'Javascript',
+    'PHP',
+    'PYTHON',
+]
+
+var arrayLength = myArray.length;
+
+for (var i = 0 ; i < arrayLength ; i++) {
+    console.log(myArray[i])
+}
+----------------------------------------------------------
+
+
+
+49. Vòng lập for/in
+-- for/in : Lặp qua key của đối tượng
+VD 1 :
+var myInfo = {
+    namee:'nguyễn anh dũng',
+    age:'20',
+    address:'HCM',
+}
+
+for (var key in myInfo) {
+    console.log(key);
+}
+
+
+VD 2 : 
+var languages = [
+    'java',
+    'php'
+];
+for (var key in languages) {
+    console.log(languages[key]);
+}
+
+
+VD 3 : 
+var myString  = 'PHO';
+for (var key in myString) {
+    console.log(myString[key]);
+}
+-----------------------------------------------
+
+
+
+50. for / of 
+--for/of : Lặp qua value của đối tượng
+VD : 
+var languages = [
+    'java',
+    'php',
+    'JavaScript',
+];
+for (var value of myString) {
+    console.log(value);
+}
+
+
+VD 2 : 
+var myInfo = {
+    namee:'nguyễn anh dũng',
+    age:'20',
+    address:'HCM',
+}
+
+Cách 1 : 
+for (var value of Object.keys(myInfo)){
+    console.log(myInfo[value])
+}
+
+Cách 2 : 
+for (var value of Object.values(myInfo)){
+    console.log(value)
+}
+-----------------------------------------------------------
+
+
+
+
+51. Vòng lập while
+-- while : Lặp khi điều kiện đúng
+VD : 
+var i = 0;
+while (i<1000) {
+    i++;
+    console.log(i)
+}
+----------------------------------------------------------
+
+
+
+
+52. do/while
+-- do/while : Lặp ít nhất 1 lần, sau đó lặp khi điều kiên đúng
+VD : 
+var i = 0;
+do {
+    i++;
+    console.log(i)
+}while (i<10);
+
+
+
+VD 2 : 
+var isSuccess = false;
+
+do {
+    i++;
+    console.log(i)
+
+    if(true) {
+        isSuccess = true;
+    }
+}while (!isSuccess && i<3 );
+------------------------------------------
+
+
+
+
+53 . break & continue trong vòng lặp
+-- break sẽ thoát khỏi vòng lặp khi nó chạy
+-- continue 
+
+for (var i = 0 ; i<10; i++){
+
+    //chỉ in số chẵn
+    giải thích : nếu là số lẻ thì continue ,
+        sẽ bỏ qua hết các dòng trong vòng lặp phía dưới
+        và chạy tiếp
+    if(i%2 !==0){
+        continue;
+    }
+
+    //nếu chỉ muốn i chạy đến 5 thôi thì dùng như sau 
+    if (i>=5){
+        break;
+    }
+}
+---------------------------------------------------------------
+
+
+
+
+54. Vòng lặp lồng nhau
+VD:
+var myArray = [
+    [1,2],
+    [3,4],
+    [5,6],
+];
+
+for (var i=0 ; i< myArray.length; i++){
+    console.log(myArray[i]);
+
+    for (var j = 0 ; j<myArray[i].length; j++){
+        console.log(myArray[i][j]);
+    }
+}
+------------------------------------------------------------------
+
+
+
+
+55. 
+VD : In giá trị giảm
+for (var i = 100; i > 0 ; i--) {
+    console.log(i);
+}
+
+VD 1 : giá trị tăng 0 5 10 15 20 
+for (var i = 0; i <= 100 ; i+=5) {
+    console.log(i);
+}
+------------------------------------------------------------------
+
+
+
+
+========56, 57 , 58 , 59 , 60 ==============
+==============================================
+============================================
+
+-- forEach() : duyệt qua từng phần tử của mảng
+-- every() : kiểm tra 1 điều kiện nào đó
+-- some() : kiểm tra 1 điều kiện nào đó
+-- find() : Tìm kiếm trả về 1 giá trị
+-- filter(): Tìm kiếm trả về giá trị thỏa mãn
+-- map()
+-- reduce: Trả về 1 giá trị duy nhất sau khi tính toán 
+
+
+56. 
+-- forEach(): callback
+duyệt qua từng phần tử của mảng
+VD:
+var courses = [
+    {
+        id:1,
+        name: 'java',
+        coin: 0
+    },
+    {
+        id:1,
+        name: 'java',
+        coin: 0
+    },
+]
+
+courses.forEach(function(course , index) {
+    console.log(index, course);
+});
+
+VD 2 : 
+var formValues = [
+    { field: 'name', value: 'Sơn Đặng' },
+    { field: 'age', value: 18 },
+    { field: 'address', value: 'Hà Nội' },
+]
+
+function getRequestBodyFromValues(formValues) {
+    var items = {}
+    formValues.forEach(function(course , index) {
+        items[course.field] = course.value
+    });
+    console.log(items);
+    return items
+    
+}
+getRequestBodyFromValues(formValues);
+==> Kết quả : {name: 'Sơn Đặng', age: 18, address: 'Hà Nội'}
+
+
+
+
+-- every() : kiểm tra 1 điều kiện nào đó
+trong mảng có đúng hay ko , tất cả phải đúng
+VD : Kiểm tra coin có bằng 0 hay ko 
+var isFree = courses.every(function (course , index) {
+    return course.coin === 0
+});
+==> kết quả trả về : True
+
+VD 2 : kIỂM Tra số dương : 
+return numbers.every(number => number > 0);
+
+
+
+-- some() : kiểm tra 1 điều kiện nào đó
+trong mảng có đúng hay ko , chỉ cần 1 thằng đúng
+VD : 
+var isFree = courses.some(function (course , index) {
+    return course.coin ===0
+});
+==> kết quả trả về : True
+
+VD 2 : Kiểm tra trong mảng có khóa học miễn phí ko
+var course = [
+    { name: 'Javascript', vnd: 1000000 },
+    { name: 'PHP', vnd: 990000 },
+    { name: 'HTML, CSS', vnd: 0 }
+    // ...
+]
+function hasFreeCourses(courses) {
+    return courses.some(course => course.vnd === 0);
+}
+
+
+
+-- find() : Tìm kiếm trả về 1 giá trị
+var course = courses.find(function (course , index) {
+    return course.name === 'Java';
+});
+
+VD 2 : Tìm thú có chỉ số attack bằng 150 và trả về thú đó trong hàm findAMonsterByAttack 
+    đã cho trước (Trả về thú đầu tiên tìm được)
+    Trường hợp trong danh sách monsters không có thú phù hợp thì hàm findAMonsterByAttack trả về null
+
+function findAMonsterByAttack(monsters) {
+    return monsters.some(monster => monster.attack === 150) ? 
+    monsters.find(monster => monster.attack === 150) : null;
+}
+
+
+
+-- filter(): Tìm kiếm trả về giá trị thỏa mãn
+var course = courses.filter(function (course , index) {
+    return course.name === 'Java';
+});
+
+Tìm Kiếm mảng 1 có data của mảng 2 hay ko
+var array1 = ['1', '2', 6, 8]
+var array2 = ['2', '6', 9]
+function findEqualValues(array1,array2) {
+    return array1.filter(array => array2.includes(array));
+  };
+console.log(findEqualValues(array1,array2))
+------------------------------------------------------
+
+
+
+57.
+-- map()
+var newCourses = courses.map(function(course, index , originArray){
+    return {
+        id: course.id,
+        name: `Khóa Học: ${course.name}`,
+        coin: course.coin,
+        coinText: `Giá: ${course.coin}`
+    }
+});
+
+VD2 : 
+Input: [0, 1, 2] - Output: [false, true, true]
+Input: [NaN, 'hi', ''] - Output: [false, true, false]
+Giải : 
+function convertToBoolean(inputs) {
+    return inputs.map(function (course,index){
+        return Boolean(course)
+    });
+}
+
+
+VD 3 : Cho trước biến inputs là một array 
+        gồm các phần tử là các chữ số bất kì. Trong hàm run, 
+        hãy trả về array mới từ array inputs đã cho 
+        với giá trị các phần tử có giá trị x 3 lần.
+function run(inputs) {
+    return inputs.map(function(course , index) {
+        return Number(course)*3
+    });
+}
+------------------------------------------------------------
+
+
+
+
+58.
+-- reduce: Trả về 1 giá trị duy nhất sau khi tính toán 
+var courses = [
+    {
+        id:1,
+        name: 'java',
+        coin: 0
+    },
+    {
+        id:1,
+        name: 'java',
+        coin: 0
+    },
+]
+// Biến Lưu Trữ
+var totalCoin = 0;
+for (var course of courses) {
+    totalCourse += course.coin;
+}
+
+var totalCoin = courses.reduce(function(accumulator,currentValue,currentIndex, originArray){
+    return accumulator + currentValue.coin;
+}, 0);
+
+
+/////////////////////////
+VD 3 : Làm Phẳng mảng
+var depthArray = [1,2, [3,4], 5,6,[7,8],9,10];
+
+var flatArray = depthArray.reduce(function(flatOutput , depthitem) {
+    return flatOutput.concat(depthitem)
+},[]);
+==> Kết quả : [1,2,3,4,5,6,7,8,9,10]
+
+
+
+VD 4 : lẤY ra các khóa học đưa vào 1 mảng mới
+var toppics = [
+    {
+        topic:"Front-end",
+        courses: [
+            {
+                id:1,
+                title:"HTML, CSS"
+            },
+            {
+                id:2,
+                title: ""
+            }
+        ]
+    },
+]
+
+
