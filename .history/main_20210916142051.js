@@ -262,4 +262,4 @@
 // console.log(Math.floor(Math.random() * 4))
 
 var boxHTMLCollection = document.querySelectorAll(".box");
-var test = boxHTMLCollection.getE
+varboxHTMLCollection

@@ -251,15 +251,14 @@
 
 
 
-// var random = Math.floor(Math.random() * 4)
-// var listCoin = [
-//     '10 Coin',
-//     '20 Coin',
-//     '30 Coin',
-//     '40 Coin',
-// ];
-// console.log(listCoin[random])
-// console.log(Math.floor(Math.random() * 4))
+var random = Math.floor(Math.random() * 4)
+var listCoin = [
+    '10 Coin',
+    '20 Coin',
+    '30 Coin',
+    '40 Coin',
+];
+console.log(listCoin[random])
+console.log(Math.floor(Math.random() * 4))
 
-var boxHTMLCollection = document.querySelectorAll(".box");
-var test = boxHTMLCollection.getE
+document.querySelector(".box:first-first-child")

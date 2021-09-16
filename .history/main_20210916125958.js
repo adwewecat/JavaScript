@@ -261,5 +261,5 @@
 // console.log(listCoin[random])
 // console.log(Math.floor(Math.random() * 4))
 
-var boxHTMLCollection = document.querySelectorAll(".box");
-var test = boxHTMLCollection.getE
+var boxHTMLCollection = document.querySelectoR(".box");
+console.log(boxHTMLCollection)

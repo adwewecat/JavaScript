@@ -1,0 +1,18 @@
+
+
+
+=============70 =================
+70.
+HTML DOM 
+DOM là viết tắt của Doucument Object Modal 
+gồm 3 thành phần :
+1. element : những j nằm trong thẻ tag là element (VD : <h1> , <body>)
+2. attribute : là những gì nằm trong thẻ tag , VD (<h1 class="" ></h1>) thì class="" là attribute
+3,Text : Là Đoạn chữ
+Node : điểm  giao nhau
+--------------------------------------------
+
+71
+
+
+

@@ -1,0 +1,19 @@
+
+
+
+=============70 71 72 =================
+70. 71 72
+HTML DOM 
+DOM là viết tắt của Doucument Object Modal , là quy chuẩn của W3C
+gồm 3 thành phần :
+1. element : những j nằm trong thẻ tag là element (VD : <h1> , <body>)
+2. attribute : là những gì nằm trong thẻ tag , VD (<h1 class="" ></h1>) thì class="" là attribute
+3,Text : Là Đoạn chữ
+Node : điểm  giao nhau
+--------------------------------------------
+
+
+73 . Get Elament Methods
+Elament : id, class, tag, css selector 
+
+
