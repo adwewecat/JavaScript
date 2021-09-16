@@ -111,26 +111,7 @@ addText2.textContent = 'Thao tác với DOM qua bài tập tại F8'
 
 
 
-79. Thêm 1 element Node vào 1 element
-<div class = "box" ></div>
-
-//Lấy element trong thẻ cha
-var boxElement = doccument.querySelector('.box');
-boxElement.innerHTML = '<h1>New Heading</h1>';
-boxElement.innerHTML;
+79.
+.
 
 
-//lấy element kể cả thẻ cha
-var boxElement = doccument.querySelector('.box');
-boxElement.outerHTML = '<h1>New Heading</h1>';
-boxElement.outerHTML;
-
-VD 1 : 
-var addText = document.querySelector('ul:nth-child(1)')
-addText.innerHTML = `<li class="li1">Test li 1</li>
-                    <li class="li1">Test li 1</li>
-                    <li class="li1">Test li 1</li>`;
-
-var addText1 = document.querySelectorAll('ul')[1]
-addText1.outerHTML = '<h1>Con Mèo</h1>'
---------------------------------------------------------------

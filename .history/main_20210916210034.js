@@ -272,11 +272,6 @@
 // var addText = document.querySelectorAll('div')[0]
 // addText.innerText = 'Học lập trình tại F8'
 
-var addText = document.querySelector('ul:nth-child(1)')
-addText.innerHTML = `<li class="li1">Test li 1</li>
-                    <li class="li1">Test li 1</li>
-                    <li class="li1">Test li 1</li>`;
+var addText = document.querySelector('ul:nth-child(2)')
 
-var addText1 = document.querySelectorAll('ul')[1]
-addText1.outerHTML = '<h1>Con Mèo</h1>'
-console.log(addText1)
+console.log(addText)

@@ -125,7 +125,6 @@ var boxElement = doccument.querySelector('.box');
 boxElement.outerHTML = '<h1>New Heading</h1>';
 boxElement.outerHTML;
 
-VD 1 : 
 var addText = document.querySelector('ul:nth-child(1)')
 addText.innerHTML = `<li class="li1">Test li 1</li>
                     <li class="li1">Test li 1</li>

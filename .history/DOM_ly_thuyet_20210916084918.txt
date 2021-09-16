@@ -1,8 +1,0 @@
-
-
-
-=============70 =================
-70.
-HTML DOM 
-DOM là viết tắt của Doucument O
-

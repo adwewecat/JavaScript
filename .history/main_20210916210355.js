@@ -277,6 +277,5 @@ addText.innerHTML = `<li class="li1">Test li 1</li>
                     <li class="li1">Test li 1</li>
                     <li class="li1">Test li 1</li>`;
 
-var addText1 = document.querySelectorAll('ul')[1]
-addText1.outerHTML = '<h1>Con Mèo</h1>'
+var addText1 = document.querySelector('ul:nth-child(2)')
 console.log(addText1)

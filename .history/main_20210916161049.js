@@ -260,23 +260,6 @@
 // ];
 // console.log(listCoin[random])
 // console.log(Math.floor(Math.random() * 4))
-// var f8LinkElement = document.querySelectorAll('a:nth-child(1)')[0]
-// var f8ShortLink = f8LinkElement.getAttribute('href')
-// var f8LinkElement2 = document.querySelectorAll('a:nth-child(2)')[0]
-// f8LinkElement2.setAttribute('href', f8ShortLink)
 
-// var f8LinkElement3 = document.querySelector('div')
-// f8LinkElement3.setAttribute('data-url', f8ShortLink)
-
-
-// var addText = document.querySelectorAll('div')[0]
-// addText.innerText = 'Học lập trình tại F8'
-
-var addText = document.querySelector('ul:nth-child(1)')
-addText.innerHTML = `<li class="li1">Test li 1</li>
-                    <li class="li1">Test li 1</li>
-                    <li class="li1">Test li 1</li>`;
-
-var addText1 = document.querySelectorAll('ul')[1]
-addText1.outerHTML = '<h1>Con Mèo</h1>'
-console.log(addText1)
+var f8LinkElement = document.querySelectorAll('a:nth-child(2)')[0]
+console.log(f8LinkElement)
