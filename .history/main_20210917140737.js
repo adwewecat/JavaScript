@@ -278,19 +278,16 @@
 //                     <li class="li1">Test li 1</li>`;
 
 
-// var aElement = document.querySelectorAll('a')
+var aElement = document.querySelectorAll('a')
 
-// for (var i = 0; i < aElement.length; ++i) {
-//     aElement[i].onclick = function(e) {
-//         if (!e.target.href.startsWith('https://f8.edu.vn')) {
-//             e.preventDefault();
-//         }
-//     }
-// }
+for (var i = 0; i < aElement.length; ++i) {
+    aElement[i].onclick = function(e) {
+        if (!e.target.href.startsWith('https://f8.edu.vn')) {
+            e.preventDefault();
+        }
+    }
+}
 
 
 
-var json = '["JavaScript","PHP"]';
-var json = '{"name":"Anh Dũng", "age": 26}';
-
-console.log(json)
+console.log(aElement)

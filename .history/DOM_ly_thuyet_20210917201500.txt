@@ -433,7 +433,7 @@ JSON.Stringify(a)  từ JavaScript --> Json
 88. 89. 90  Promise : Sinh ra để xử lý các quy tắc bất đồng bộ 
 trước khi có promise thì sẽ sử dụng call back , nhưng khi sử dụng
 call back sẽ sinh ra callback hell , code bị sâu vào khó hỉu. sinh
-ra ES6,
+ra ES6
     -- Sysc : Đồng Bộ : thằng nào viết trước chạy trước, viết sau chạy sau
     -- Async : Bất Đồng Bộ : viết sau chạy xong trước, viết trước chạy xong sau
     -- 
@@ -477,8 +477,6 @@ promise
     .finally(function(){
         console.log('Finish')
     }) 
-----------------------------------------------------------------
-
 
 
 

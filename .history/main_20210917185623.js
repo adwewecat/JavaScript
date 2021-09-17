@@ -291,6 +291,6 @@
 
 
 var json = '["JavaScript","PHP"]';
-var json = '{"name":"Anh Dũng", "age": 26}';
+var json = '{"name","PHP"}';
 
 console.log(json)
