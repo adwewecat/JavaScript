@@ -1,0 +1,273 @@
+
+
+
+=============70 71 72 73 74 =================
+=============75 76 77 78 79 =================
+70. 71 72
+HTML DOM 
+DOM là viết tắt của Doucument Object Modal , là quy chuẩn của W3C
+gồm 3 thành phần :
+1. element : những j nằm trong thẻ tag là element (VD : <h1> , <body>)
+2. attribute : là những gì nằm trong thẻ tag , VD (<h1 class="" ></h1>) thì class="" là attribute
+3,Text : Là Đoạn chữ
+Node : điểm  giao nhau
+--------------------------------------------
+
+
+73 74.75 Get Elament Methods
+Elament : id, class, tag, css selector , html colection
+
+-- getElementById
+-- getElementsByClassName
+-- getElementsByTagName
+-- querySelector
+-- querySelectorAll
+
+-- HTML collection
+
+//lấy thẻ tag theo ID
+doccument.getElementById('heading');
+
+
+//lấy thẻ tag theo class
+doccument.getElementsByClasName('heading');
+var boxHTMLCollection = document.getElementsByClassName("box"),
+    box1Element = document.querySelector(".container .box:nth-child(1)"),
+    box2Element = document.querySelector(".container .box:nth-child(2)"),
+    allItemElements = document.getElementsByTagName("li"),
+    box1ItemElements = document.querySelectorAll(
+        ".container .box:nth-child(1) li"
+    ),
+    box2ItemElements = document.querySelectorAll(
+        ".container .box:nth-child(2) li"
+    );
+
+//lấy thẻ tag theo tag name
+doccument.getElementsByTagName('h1');
+
+
+//lấy thẻ tag theo css selector
+doccument.querySelector('.box .heading');
+==> trả về 1 giá trị
+doccument.querySelectorALL('.box .heading');
+==> trả về nhiều giá trị
+
+VD: 
+var h1Element = document.querySelector("h1"),
+    h2Element = document.querySelector("section h2"),
+    h3Element = document.querySelector("div h3");
+---------------------------------------------------------
+
+
+
+
+76.77 Note attribute và note Text
+Note attribute : là những gì nằm trong thẻ tag , VD (<h1 class="" ></h1>) thì class="" là attribute
+
+var headingElement = 
+    document.querySelector('h1');
+
+//thêm thuộc tính cho thẻ 
+cách 1 : headingElement.className='Heading';
+Cách 2 : headingElement.setAttribute=(href , 'Heading');
+
+// lấy thẻ a thứ nhất
+var f8LinkElement = document.querySelectorAll('a:nth-child(1)')[0]
+
+// Lấy nội dung attribute trong thẻ tag
+var f8ShortLink = f8LinkElement.getAttribute('href')
+--------------------------------------------------------------
+
+
+
+
+78. text Node
+-- innerText
+-- textContent
+VD : 
+<h1 class="heading">Heading Text</h1>
+
+var headingElement = 
+    doccument.querySelector('.heading');
+//Lấy ra Text Node
+headingElement.innerText ==> Kết quả : Heading Text
+headingElement.textContent ==> Kết quả : Heading Text
+
+//Thêm vào 1 Text Node
+headingElement.innerText = 'New Text' 
+==> Kết quả : New Text
+
+VD : 
+<div class="box"></div>
+<div></div>
+--Thêm nội dung text Học lập trình tại F8 vào thẻ div có class box
+--Thêm nội dung text Thao tác với DOM qua bài tập tại F8 vào thẻ div thứ hai
+var addText = document.querySelectorAll('div')[0]
+addText.textContent = 'Học lập trình tại F8'
+var addText2 = document.querySelectorAll('div')[1]
+addText2.textContent = 'Thao tác với DOM qua bài tập tại F8'
+-------------------------------------------------------------------
+
+
+
+
+79. Thêm 1 element Node vào 1 element
+<div class = "box" ></div>
+
+//Lấy element trong thẻ cha
+var boxElement = doccument.querySelector('.box');
+boxElement.innerHTML = '<h1>New Heading</h1>';
+boxElement.innerHTML;
+
+
+//lấy element kể cả thẻ cha
+var boxElement = doccument.querySelector('.box');
+boxElement.outerHTML = '<h1>New Heading</h1>';
+boxElement.outerHTML;
+
+VD 1 : 
+var addText = document.querySelector('ul:nth-child(1)')
+addText.innerHTML = `<li class="li1">Test li 1</li>
+                    <li class="li1">Test li 1</li>
+                    <li class="li1">Test li 1</li>`;
+
+var addText1 = document.querySelectorAll('ul')[1]
+addText1.outerHTML = '<h1>Con Mèo</h1>'
+--------------------------------------------------------------
+
+
+
+
+
+============================================================
+=============80 , 81 , 82 , 83 , 84=========================
+============================================================
+
+80 .
+Bài Tập 1 : ------
+<div>
+    <h1>Học JS DOM tại F8</h1>
+    <h2>Làm bài tập tại F8</h2>
+</div>
+Từ biến h1Element hãy lấy tên thẻ (tag) của element này và lưu vào biến h1TagName
+Lấy element ngang cấp kế tiếp của h1Element và lưu vào biến h1NextElementSibling
+
+var h1Element = document.querySelector('h1:first-child')
+var h1TagName = h1Element.tagName
+var h1NextElementSibling = h1Element.nextElementSibling
+
+
+Bài Tập 2 :-----
+<div>
+    Text 1
+    <h1>Học JS tại F8</h1>
+    Text 2
+</div>
+
+Lấy text node có content là Text 1 và gán cho biến textNode1
+Lấy text node có content là Text 2 và gán cho biến textNode2
+Lấy h1 element node và gán cho biến h1Element
+
+var textNode1 = document.querySelector('div').firstChild
+var textNode2 = document.querySelector('div').lastChild
+var h1Element = document.querySelector('div').lastElementChild
+----------------------------------------------------------------------
+
+
+
+81. DOM CSS : Thêm CSS cho element
+<div class = "box" ></div>
+
+var boxElement = 
+    doucument.querySelector('.box');
+
+Object.assign(boxElement.style, {
+    width: '200px',
+    height: '100px',
+    backgroundColor: 'green'
+});
+
+Bài Tập 1 : 
+<div id="box">BOX</div>
+Đặt cho thẻ div id box có màu nền với mã #F05123
+Đặt font-size cho thẻ div là 2rem
+
+var boxElement = document.querySelector('#box')
+Cách 1 : Object.assign(boxElement.style, {
+    backgroundColor: '#F05123',
+    fontSize: '2rem'
+})
+
+Cách 2 :
+boxElement.style.fontSize = '2rem';
+boxElement.style.backgroundColor: '#F05123';
+-----------------------------------------------------------------
+
+
+
+
+
+82. ClassList
+--add : thêm class vào element
+--contains : kiểm tra có hay ko
+--remove : xóa class khỏi element
+--toggle : Nếu có class thì xóa , nếu ko có thì thêm
+
+
+<div class = "box box-2" ></div>
+<style>
+.red{
+    color:red;
+}
+.blue {
+    color:blue;
+}
+<style>
+
+var boxElement = 
+    doucument.querySelector('.box');
+
+
+--add : thêm class vào element
+boxElement.classList[0] --> box
+boxElement.classList.add('red','blue');
+
+
+--contains : kiểm tra className có hay ko
+boxElement.classList.contains('red') -->true 
+
+
+--remove : xóa class khỏi element
+cách 1 : boxElement.classList.remove('red');
+cách 2 : setTimeout(()==> {
+    boxElement.classList.remove('red');
+}, 3000) ==> class sẽ được xóa sau 3s
+
+
+--toggle : Nếu có class thì xóa , nếu ko có thì thêm
+boxElement.classList.toggle('red');
+setInterval(()==> {
+    boxElement.classList.toggle('red');
+}, 3000) ==> class sẽ được xóa sau 3s, và thêm lại sau 3s
+
+
+Bài Tập:
+<h1>Học JS DOM tại F8</h1>
+<h2 class="test">Làm bài tập JS tại F8</h2>
+
+Thêm class first-heading vào thẻ h1
+Thêm class second-heading vào thẻ h2
+Xóa bỏ class test tại thẻ h2
+
+var h1Element = document.querySelector('h1')
+h1Element.classList.add('first-heading')
+h1Element.nextElementSibling.classList.add('second-heading')
+h1Element.nextElementSibling.classList.remove('test')
+-------------------------------------------------------------------------------
+
+
+
+
+
+83.
+
