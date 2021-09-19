@@ -1,0 +1,13 @@
+
+
+ECMAScript 6 ra đời đầu năm 2015 , 
+là chuẩn hóa của JavaScript nhưng 1 số trình duyệt không support
+
+
+90 . 99.
+zống nhau zữ let / const / var là đều dùng để định nghĩa ra 1 biến
+
+1. let / const / --> khác với var : 
+scope(phạm vi truy cập) , Hotting , Assignment (tính gán lại giá trị)
+
+let , const 

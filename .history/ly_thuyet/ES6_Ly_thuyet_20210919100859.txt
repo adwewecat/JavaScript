@@ -1,0 +1,7 @@
+
+
+
+ECMAScript 6 ra đời đầu năm 2015 ,
+
+1. let / const 
+

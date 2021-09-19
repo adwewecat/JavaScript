@@ -1,0 +1,124 @@
+
+
+ECMAScript 6 ra đời đầu năm 2015 , 
+là chuẩn hóa của JavaScript nhưng 1 số trình duyệt không support
+
+
+90 . 99.
+zống nhau zữ let / const / var là đều dùng để định nghĩa ra 1 biến
+
+1. let / const / --> khác với var : 
+scope(phạm vi truy cập) , Hotting , Assignment (tính gán lại giá trị)
+
+let , const : phạm vi truy cập chỉ ở trong phần ngoặc của nó được khai báo
+let, const  : không có tính hosting (là tự động đưa phần khai báo biến lên trên đầu)
+const : Không thể gán lại biến lần 2 , let và var thì được
+
+
+code thuần : var 
+code có thư viện babel : let / const
+--------------------------------------------------------------------------------------------------
+
+
+
+
+100. template Literals
+có dấu \ trước chữ nếu muốn nó là string thông thường
+const lines = ` line 1 ${id}
+line 2
+line 3`;
+-----------------------------------------------------------
+
+
+
+
+
+101.Arrow function
+Hàm Mũi tên 
+
+VD :
+function logger(log){
+    console.log(log)
+}
+
+viết ra như sau :
+(log) => {
+    console.log(log)
+}
+
+
+VD 2 :
+const sum = (a , b) => {
+    return a+b;
+}
+
+viết như sau : 
+const sum = (a,b) => a+b 
+
+cách trả về biến object 
+const sum = (a,b) => ({a:a , b:b});
+---------------------------------------------------------
+
+
+
+
+
+102. Classes
+Cách 1 : 
+function Course (name,price) {
+    this.name = name;
+    this.price = price;
+}
+
+Cách 2: Dùng Classes
+class Course {
+    constructor(name,price){
+        this.name = name;
+        this.price = price;
+    }
+}
+
+const phpCourse = new Course('PHP',100);
+const jsCourse = new Course('Javasript',200);
+----------------------------------------------------
+
+
+
+
+103 . Default pagrameter value
+
+function logger(log){
+    if (typeof log === 'undefined'){
+        log = 'Giá trị mặc định'
+    }
+    console.log(log)
+}
+
+function logger(log, type = 'log'){
+    console[type] (log);
+}
+---------------------------------------------------------\\
+
+
+
+
+104. Enhanced Object literals
+-- Định nghĩa key : value cho object 
+-- Định nghĩa method cho object 
+-- Định nghĩa key cho object dưới dạng ngắn gọn hơn
+
+var name = 'JavaScript'
+var price = 1000
+
+var Course ={
+    name:name,
+    price:price
+}
+
+Cách viết khác theo Enhanced Object literals
+
+
+
+
+
+
