@@ -283,8 +283,7 @@ var array = ['JavaScript' , 'PHP', 'RUBY]
 
 
 
-VD2 : Viết hàm tính giai thừa của một số sử dụng đệ quy
-Tính Giai Thừa bằng đệ quy 
+VD2 : Tính Giai Thừa 
 function factorial(number) {
     if(number > 0 ) {
         return number * factorial(number - 1)

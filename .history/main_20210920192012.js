@@ -371,15 +371,12 @@
 
 
 
-function giaiThua(number) {
-    if (number > 0) {
-        return number * giaiThua(number - 1)
-    }
-    return 1;
-}
+var array = ["a", "b", "c", "d", "e", "f", "a", "b"];
 
-console.log(giaiThua(6));
+var newArray = new Set(array);
 
+new
+console.log(newArray)
 
 
 

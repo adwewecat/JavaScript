@@ -257,40 +257,13 @@ if (obj.cat?.cat2?.name){
 
 
 112 . Đệ quy : là 1 hàm được gọi lại chính nó trong hàm của nó 
-
-VD : Ngoài lề
-Loại bỏ các phần tử trùng mà ko dùng đến vòng lặp
-var array = ['a', 'b', 'c', 'd', 'e', 'f', 'a', 'b']
-
-var newArray = new Set(array);
-
-console.log([...newArray]);
-
-
 VD : 
 
-function loop(start, end , callBack) {
-    if( start < end) {
-        return loop(start+1, end, callBack)
-    }
-}
-
-loop(0 , array.length ,function(index){
-    console.log(array[index])
-})
-
-var array = ['JavaScript' , 'PHP', 'RUBY]
+var array = ['a', 'b', 'c', 'd', 'e', 'f', 'a' , 'b']
 
 
 
-VD2 : Viết hàm tính giai thừa của một số sử dụng đệ quy
-Tính Giai Thừa bằng đệ quy 
-function factorial(number) {
-    if(number > 0 ) {
-        return number * factorial(number - 1)
-    }
-    return 1; 
-}
+
 
 
 

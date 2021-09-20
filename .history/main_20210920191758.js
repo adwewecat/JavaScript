@@ -371,19 +371,6 @@
 
 
 
-function giaiThua(number) {
-    if (number > 0) {
-        return number * giaiThua(number - 1)
-    }
-    return 1;
-}
-
-console.log(giaiThua(6));
-
-
-
-
-
 // var postApi =
 //     'https://jsonplaceholder.typicode.com/posts'
 
@@ -403,5 +390,4 @@ console.log(giaiThua(6));
 //     })
 //     .catch(function(err) {
 //         console.log('Có Lỗi trong quá trình call API', err)
-//     })  console.log('Có Lỗi trong quá trình call API', err)
 //     })

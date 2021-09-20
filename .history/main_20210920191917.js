@@ -371,15 +371,11 @@
 
 
 
-function giaiThua(number) {
-    if (number > 0) {
-        return number * giaiThua(number - 1)
-    }
-    return 1;
-}
+var array = ["a", "b", "c", "d", "e", "f", "a", "b"];
 
-console.log(giaiThua(6));
+var newArray = new Set;
 
+console.log(newArray)
 
 
 
@@ -403,5 +399,4 @@ console.log(giaiThua(6));
 //     })
 //     .catch(function(err) {
 //         console.log('Có Lỗi trong quá trình call API', err)
-//     })  console.log('Có Lỗi trong quá trình call API', err)
 //     })

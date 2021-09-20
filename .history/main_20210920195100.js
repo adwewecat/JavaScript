@@ -373,12 +373,13 @@
 
 function giaiThua(number) {
     if (number > 0) {
+        console.log(giaiThua(number - 1));
         return number * giaiThua(number - 1)
     }
     return 1;
 }
 
-console.log(giaiThua(6));
+giaiThua(number);
 
 
 

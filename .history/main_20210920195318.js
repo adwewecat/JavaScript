@@ -373,6 +373,7 @@
 
 function giaiThua(number) {
     if (number > 0) {
+        console.log((number * giaiThua(number - 1)).to);
         return number * giaiThua(number - 1)
     }
     return 1;

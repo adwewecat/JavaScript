@@ -378,7 +378,7 @@ function giaiThua(number) {
     return 1;
 }
 
-console.log(giaiThua(6));
+console.log([...newArray]);
 
 
 

@@ -270,27 +270,13 @@ console.log([...newArray]);
 VD : 
 
 function loop(start, end , callBack) {
-    if( start < end) {
-        return loop(start+1, end, callBack)
-    }
+
 }
 
-loop(0 , array.length ,function(index){
-    console.log(array[index])
-})
+loop(array.length , array)
 
 var array = ['JavaScript' , 'PHP', 'RUBY]
 
-
-
-VD2 : Viết hàm tính giai thừa của một số sử dụng đệ quy
-Tính Giai Thừa bằng đệ quy 
-function factorial(number) {
-    if(number > 0 ) {
-        return number * factorial(number - 1)
-    }
-    return 1; 
-}
 
 
 

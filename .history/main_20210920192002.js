@@ -371,37 +371,32 @@
 
 
 
-function giaiThua(number) {
-    if (number > 0) {
-        return number * giaiThua(number - 1)
-    }
-    return 1;
-}
+var array = ["a", "b", "c", "d", "e", "f", "a", "b"];
 
-console.log(giaiThua(6));
+var newArray = [new Set(array);
+
+        console.log(newArray)
 
 
 
 
+        // var postApi =
+        //     'https://jsonplaceholder.typicode.com/posts'
 
-// var postApi =
-//     'https://jsonplaceholder.typicode.com/posts'
-
-// fetch(postApi)
-//     .then(function(response) {
-//         return response.json(); //thực chất là nó đang Json.parse
-//     })
-//     .then(function(posts) {
-//         var htmls = posts.map(function(post) {
-//             return ` <li>
-//                      <h2>${post.title}</h2>
-//                      <p>${post.body}</p>
-//                     </li>`
-//         });
-//         htmls.join('')
-//         document.getElementById('post-block').innerHTML = htmls
-//     })
-//     .catch(function(err) {
-//         console.log('Có Lỗi trong quá trình call API', err)
-//     })  console.log('Có Lỗi trong quá trình call API', err)
-//     })
+        // fetch(postApi)
+        //     .then(function(response) {
+        //         return response.json(); //thực chất là nó đang Json.parse
+        //     })
+        //     .then(function(posts) {
+        //         var htmls = posts.map(function(post) {
+        //             return ` <li>
+        //                      <h2>${post.title}</h2>
+        //                      <p>${post.body}</p>
+        //                     </li>`
+        //         });
+        //         htmls.join('')
+        //         document.getElementById('post-block').innerHTML = htmls
+        //     })
+        //     .catch(function(err) {
+        //         console.log('Có Lỗi trong quá trình call API', err)
+        //     })
