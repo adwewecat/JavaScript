@@ -60,7 +60,10 @@ function Validator(option) {
 
             //Thực hiện lặp qua từng rule và validate
             option.rules.forEach(function(rule) {
-                var inputElement = formElement.querySelector(rule.selector);
+                var inputElements = formElement.querySelectorAll(rule.selector);
+
+                Array.form(inputElements).forEach(function())
+
                 var isValid = Validator(inputElement, rule);
                 if (!isValid) {
                     isFormValid = false;
@@ -76,27 +79,7 @@ function Validator(option) {
                     );
                     //convet từ nodeList thành Array List
                     var formValues = Array.from(enableInputs).reduce(function(values, input) {
-                        switch (input.type) {
-                            case 'radio':
-                                values[input.name] = formElement.querySelector('input[name="' + input.name + '"]:checked').value
-                                break;
-                            case 'checkbox':
-                                if (!input.matches(':checked')) {
-                                    values[input.name] = '';
-                                    return values
-                                };
-
-                                if (!Array.isArray(values[input.name])) {
-                                    values[input.name] = []
-                                }
-                                values[input.name].push()
-                                break;
-                            case 'file':
-                                values[input.name] = input.files
-                                break;
-                            default:
-                                values[input.name] = input.value;
-                        }
+                        values[input.name] = input.value;
                         return values;
                     }, {});
                     option.onSubmit(formValues);
@@ -121,7 +104,7 @@ function Validator(option) {
 
             var inputElements = formElement.querySelectorAll(rule.selector)
 
-            Array.from(inputElements).forEach(function(inputElement) {
+            Array.form(inputElements).forEach(function(inputElement) {
                 // Xử lý trường hợp blur ra khỏi input (là bấm chuột ra chỗ khác)
                 inputElement.onblur = function() {
                     Validator(inputElement, rule);

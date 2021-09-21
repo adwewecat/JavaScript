@@ -91,9 +91,7 @@ function Validator(option) {
                                 }
                                 values[input.name].push()
                                 break;
-                            case 'file':
-                                values[input.name] = input.files
-                                break;
+                            case ''
                             default:
                                 values[input.name] = input.value;
                         }

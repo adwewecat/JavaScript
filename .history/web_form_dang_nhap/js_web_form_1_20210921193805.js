@@ -76,27 +76,7 @@ function Validator(option) {
                     );
                     //convet từ nodeList thành Array List
                     var formValues = Array.from(enableInputs).reduce(function(values, input) {
-                        switch (input.type) {
-                            case 'radio':
-                                values[input.name] = formElement.querySelector('input[name="' + input.name + '"]:checked').value
-                                break;
-                            case 'checkbox':
-                                if (!input.matches(':checked')) {
-                                    values[input.name] = '';
-                                    return values
-                                };
-
-                                if (!Array.isArray(values[input.name])) {
-                                    values[input.name] = []
-                                }
-                                values[input.name].push()
-                                break;
-                            case 'file':
-                                values[input.name] = input.files
-                                break;
-                            default:
-                                values[input.name] = input.value;
-                        }
+                        values[input.name] = input.value;
                         return values;
                     }, {});
                     option.onSubmit(formValues);
@@ -121,25 +101,23 @@ function Validator(option) {
 
             var inputElements = formElement.querySelectorAll(rule.selector)
 
-            Array.from(inputElements).forEach(function(inputElement) {
+            in
+
+            if (inputElement) {
                 // Xử lý trường hợp blur ra khỏi input (là bấm chuột ra chỗ khác)
                 inputElement.onblur = function() {
-                    Validator(inputElement, rule);
-                };
+                    Validator(inputElement, rule)
+                }
 
                 // Xử lý mỗi khi người dùng nhập vào input
                 inputElement.oninput = function() {
-                    var errorElement = getParent(
-                        inputElement,
-                        option.formGroupselector
-                    ).querySelector(option.errorSelector);
+                    var errorElement = getParent(inputElement, option.formGroupselector).querySelector(
+                        option.errorSelector
+                    );
                     errorElement.innerText = "";
-                    getParent(
-                        inputElement,
-                        option.formGroupselector
-                    ).classList.remove("invalid");
-                };
-            })
+                    getParent(inputElement, option.formGroupselector).classList.remove("invalid");
+                }
+            }
         })
 
     }

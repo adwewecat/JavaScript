@@ -82,7 +82,6 @@ function Validator(option) {
                                 break;
                             case 'checkbox':
                                 if (!input.matches(':checked')) {
-                                    values[input.name] = '';
                                     return values
                                 };
 
@@ -90,9 +89,6 @@ function Validator(option) {
                                     values[input.name] = []
                                 }
                                 values[input.name].push()
-                                break;
-                            case 'file':
-                                values[input.name] = input.files
                                 break;
                             default:
                                 values[input.name] = input.value;

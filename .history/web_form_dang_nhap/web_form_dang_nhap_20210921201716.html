@@ -20,7 +20,7 @@
 
             <div class="form-group">
                 <label for="fullname" class="form-label">Tên đầy đủ</label>
-                <input id="fullname" name="fullname" type="text" placeholder="VD: Nguyễn Anh" class="form-control">
+                <input id="fullname" name="fullname" type="text" placeholder="VD: Sơn Đặng" class="form-control">
                 <span class="form-message"></span>
             </div>
 
@@ -43,8 +43,8 @@
             </div>
 
             <div class="form-group">
-                <label for="avatar" class="form-label">Ảnh dại diện</label>
-                <input id="avatar" name="avatar" type="file" class="form-control">
+                <label for="avatar" class="form-label">Tên đầy đủ</label>
+                <input id="avatar" name="avatar" type="text" placeholder="VD: Sơn Đặng" class="form-control">
                 <span class="form-message"></span>
             </div>
 
@@ -69,7 +69,6 @@
                 Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
                 Validator.isRequired('input[name="gender"]'),
                 Validator.isRequired('#email', 'Vui lòng nhập mail của bạn'),
-                Validator.isRequired('#avatar', 'Vui lòng chọn file của bạn'),
                 Validator.minLength('#password', 8),
                 Validator.isEmail('#email'),
                 Validator.isConfirmed('#password_confirmation', function() {

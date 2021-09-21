@@ -81,18 +81,7 @@ function Validator(option) {
                                 values[input.name] = formElement.querySelector('input[name="' + input.name + '"]:checked').value
                                 break;
                             case 'checkbox':
-                                if (!input.matches(':checked')) {
-                                    values[input.name] = '';
-                                    return values
-                                };
-
-                                if (!Array.isArray(values[input.name])) {
-                                    values[input.name] = []
-                                }
-                                values[input.name].push()
-                                break;
-                            case 'file':
-                                values[input.name] = input.files
+                                if
                                 break;
                             default:
                                 values[input.name] = input.value;

@@ -92,7 +92,7 @@ function Validator(option) {
                                 values[input.name].push()
                                 break;
                             case 'file':
-                                values[input.name] = input.files
+                                values[input.name] = input.
                                 break;
                             default:
                                 values[input.name] = input.value;
