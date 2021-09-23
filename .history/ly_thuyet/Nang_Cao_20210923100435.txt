@@ -59,33 +59,4 @@ VD : const app = (function(){
 
 4. Closure : Tính Bao đóng của hàm
 -- Là một hàm có thể ghi nhớ nơi nó được tạo và truy cập được biến ở bên ngoài phạm vi
-VD : 
-function createCounter(){
-    let counter = 0
 
-    function increase(){
-        return ++increase
-    }
-    return increase
-}
-
-const counter1 = createCounter()
---------------------------------------------------------------
-
-
-
-
-
-5. strict Mode
-
-"use strict"
----------------------------------------------
-
-
-
-
-
-
-7. This trong Javascript
-
-this sẽ trả về đối tượng đang thuộc về

@@ -1,0 +1,11 @@
+
+
+
+
+1 . IIFE : Immediately Invoked Function Expression là 1 hàm được gọi ngay lập tức
+
+;(
+    Function(){
+        console.log('Now')
+    }
+)()

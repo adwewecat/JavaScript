@@ -1,0 +1,41 @@
+
+
+
+
+2 . IIFE : Immediately Invoked Function Expression là 1 hàm được gọi ngay lập tức
+có tính private(riêng tư)
+
+;(
+    Function(){
+        console.log('Now')
+    }
+)()
+
+
+VD : const app = (function(){
+    //privete
+    const cars = []
+
+    return {
+        get(index){
+            return cars(index)
+        },
+        add(car){
+            car.push(car)
+        },
+        edit(index,car){
+            car(index, car)
+        },
+        delete(index){
+            car.sploce(index, 1)
+        }
+    }
+}
+)
+----------------------------------------------------------------------
+
+
+
+
+
+3 . Scope : la

@@ -85,7 +85,5 @@ const counter1 = createCounter()
 
 
 
-
 7. This trong Javascript
 
-this sẽ trả về đối tượng đang thuộc về
