@@ -86,7 +86,7 @@ const counter1 = createCounter()
 
 
 
-7. This / bind 
+7. This trong Javascript
 
 this sẽ trả về đối tượng đang thuộc về
 this.firstName = 'Minh';
@@ -102,12 +102,7 @@ console.log(teacher.getFullName()); --> Minh Thảo
 const getTeacherName = teacher.getFullName;
 console.log(getTeacherName()); --> Minh Thu
 
----Bind: ràng buộc biến this với hàm gọi 
-const getTeacherName = teacher.getFullName.bind(teacher);
-
-
-
-
-
+Cách 2:
+const getTeacherName = teacher.getFullName;
 
 

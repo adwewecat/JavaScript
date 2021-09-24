@@ -102,7 +102,7 @@ console.log(teacher.getFullName()); --> Minh Thảo
 const getTeacherName = teacher.getFullName;
 console.log(getTeacherName()); --> Minh Thu
 
----Bind: ràng buộc biến this với hàm gọi 
+---Bind:
 const getTeacherName = teacher.getFullName.bind(teacher);
 
 
