@@ -497,7 +497,7 @@ for (var i = 0; i <= 100 ; i+=5) {
 -- some() : kiểm tra 1 điều kiện nào đó, chỉ cần 1 thằng đúng
 -- find() : Tìm kiếm trả về 1 giá trị
 -- filter(): Tìm kiếm trả về giá trị thỏa mãn
--- map()
+-- map() : sử dụng khi muốn thay đổi giá trị trong Array
 -- reduce: Trả về 1 giá trị duy nhất sau khi tính toán 
 
 
@@ -611,7 +611,7 @@ console.log(findEqualValues(array1,array2))
 
 
 57.
--- map()
+-- map() sử dụng khi muốn thay đổi giá trị trong Array
 var newCourses = courses.map(function(course, index , originArray){
     return {
         id: course.id,
